@@ -1,0 +1,162 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+    background-image:url('../img/book.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+   
+   
+}
+#main_part{
+    width:100%;
+    min-height:500px;
+    padding:5% 12.5% 0% 12.5%;
+    box-sizing:border-box;
+   
+
+}
+#sign_up{
+    width:30%;
+    height:600px; 
+    background:black;
+    float:left;
+    padding:2%;
+    border-radius:20px;
+    opacity:0.8;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#login{
+    
+    width:25%;
+   height:400px; 
+    background:#000;
+    float:right;
+    padding:2%;
+    border-radius:20px;
+    opacity:0.8;
+    margin-top:20px;
+    -webkit-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+    
+}
+#input{
+   position: relative;
+}
+#input i{
+    position: absolute;
+    left:0;
+    top:8px; 
+    padding:5px;
+    color: #000;
+    font-size:20px;
+}
+#sign_up input[type="text"],input[type="email"],input[type="password"],input[type="tel"],select,[type="date"]{
+     width:95%;
+    height:35px;
+    text-align:center;
+    border-radius:10px;
+    padding:5px;
+    background:white;
+    box-sizing:border-box;
+    font-size:20px;
+    color:black;
+   
+}
+#input select option{
+padding-left:10px;
+}
+input[type="submit"],input[type="reset"]{
+    background:none;
+    opacity:0.4;
+    width:48%;
+    color:white;
+    height:38px;
+    font-size:20px;
+    border-radius:20px;
+    border:2px solid aquamarine;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    cursor: pointer;
+    background:rgb(16, 32, 27);
+    
+    color:#ffffff;
+}
+.buttons{
+    margin-top:3%;
+}
+p{
+    color:white;
+    font-size:20px;
+    padding:10px;
+    text-decoration:none;
+    cursor:pointer;
+}
+p:hover{
+    color:aquamarine;
+}
+#icondiv{
+    background:black;
+    width:40%;
+    height:120px;
+    border-radius:100%;
+    margin:-15% auto 6% auto;
+}
+#icondiv i{
+    font-size:60px;
+    color: beige;
+   text-align:center;
+   /* margin-top: 25px;
+    margin-left:55px; */
+    padding-left: 60px;
+    padding-top:40px;
+}
+.options{
+    padding-left:50px;
+}
+#for_pop{
+    display:none;
+    cursor:not-allowed;
+}
+#pass_match{
+    color:red;
+    font-size:18px;
+     display:none;
+    text-align:center;
+    font-weight:bold;
+}
+
+    
+
+
+@media (max-width:768px){
+    #sign_up,#login{
+        text-align: center;
+        width:100%;
+        float:none;
+       
+        
+    }
+    #sign_up{
+        margin-top:40px;
+        
+    }
+    #login{
+        margin-bottom:40px;
+        
+        margin-top:75px;
+        padding-top:5px;
+        height:450px;
+        
+    }
+    #icondiv i{
+        text-align:center;
+        padding-left:5px;
+       
+    }
+    #input i{
+       margin-left:10px;
+    }
+   
+    
+}

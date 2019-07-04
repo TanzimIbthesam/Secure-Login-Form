@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secure logIn Form</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+
+</head>
+<body>
+    <div id="main_part"> 
+           
+       <div id="sign_up">
+        <div id="icondiv">
+        <i class="fas fa-user-plus fa-lg"></i>
+        
+            <p id="pass_match">Passwords Dont match!!!</p>
+        
+        
+        </div>
+        <form action="">
+        <div id="input" class="u_name">
+        
+        <input type="text"name="u_name"placeholder="Enter your name"required pattern="[A-Z a-z]{10,30}"minlength="10"maxlength="30"><br><br>
+        <i class="fas fa-user fa-lg fa-faw"></i>
+        </div>
+        <div id="input"class="u_email">
+        <input type="email"name="u_email"placeholder="Enter your email"required pattern="[A-Z a-z 0-9^@._]{5,50}"minlength="15"maxlength="30"><br><br>
+        <i class="fas fa-envelope-open-text fa-lg fa-faw"></i>
+        </div>
+        <div id="input" class="upassone">
+        <input type="password"id="passone"name="upassone"placeholder="Enter your password"required pattern="[a-z A-Z 0-9]{8,10}"minlength="10"maxlength="20"><br><br>
+        <i class="fas fa-unlock-alt fa-lg fa-faw"></i>
+        </div>
+        <div id="input" class="upasstwo">
+        <input type="password"id="passtwo"name="upasstwo"placeholder="Reenter your password"required pattern="[a-z A-Z 0-9]{8,10}"minlength="10"maxlength="20"><br><br>
+        <i class="fas fa-unlock-alt fa-lg fa-faw"></i>
+        </div>
+        <div id="input"class="phonenum">
+        <input type="tel"name="phonenum"placeholder="Enter Your Phone Number"required pattern="[0-9]{10}"minlength="10"maxlength="20"><br><br>
+        <i class="fas fa-phone-square-alt fa-lg fa-faw"></i>
+        </div>
+        <div id="input"class="gen">
+            <select name="gen" id=""class="options"required>
+                <option value="">Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <i class="fas fa-user fa-lg fa-faw"></i>
+        </div>
+        <div id="input"class="dob">
+        <input type="date"name="dob"placeholder="Enter Your Date of Birth"required><br><br>  
+        </div>
+        <div id="input"class="country">
+                <select class="options"required name="country">
+                    <option value="">Select Your Country</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="India">India</option>
+                </select><br><br>
+                <i class="fas fa-globe fa-lg fa-faw"></i>
+            </div>
+        <div class="buttons btn">
+        <input type="submit"name="btn"value="Signup">
+        <input type="Reset"name=""value="Reset">
+    </div>
+    </form>
+       </div>
+       <div id="login">
+            <div id="icondiv">
+                    <i class="fas fa-sign-in-alt fa-lg"></i>
+                </div>
+           <form action="">
+                <div id="input">
+                
+                <input type="email"name="uemail"placeholder="Enter your email"required pattern="[A-Z a-z 0-9^@._]{5,50}"minlength="10"maxlength="20" ><br><br>
+                <i class="fas fa-envelope-open-text fa-lg fa-faw"></i>
+                </div>
+                <div id="input">
+                <input type="password"name="upassone"placeholder="Enter your password"required pattern="[a-z A-Z 0-9]{8,20}"><br><br>
+                <i class="fas fa-unlock-alt fa-lg fa-faw"minlength="5"maxlength="30"></i>
+                </div>
+                <div class="buttons">
+                        <input type="submit"name="login"value="Signin">
+                        <input type="Reset"name=""value="Reset">
+                        <br><br>
+                    </div>
+                    <!-- <a href="" id="for_pass">Forgot your password?Click Here</a> -->
+                    <p id="for_pass">Forgot your password?</p>
+
+
+                    <br><br>
+                    <div id="for_pop">
+                            <div id="input">
+                            <input type="email"name="for_email"placeholder="Enter your email"required pattern="[A-Z a-z 0-9^@._]{5,50}"minlength="10"maxlength="20" ><br><br>
+                            <i class="fas fa-envelope-open-text fa-lg fa-faw"></i>
+                            </div>
+                            <input type="submit"name="send"value="Submit">
+                            <input type="Reset"id="close"name=""value="Close">
+                    </div>  
+                    </div>
+                    
+                   
+           </form>
+          
+       </div>
+    </div>
+  
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/emailvald.js"></script>
+  <script src="js/passvald.js"></script>
+</body>
+</html>
